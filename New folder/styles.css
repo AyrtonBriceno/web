@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #E8F6F6;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4ECDC4;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header img {
+    height: 60px;
+    width: auto;
+    border-radius: 10px;
+}
+
+header h1 {
+    color: black;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dashboard {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.welcome {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.welcome h2 {
+    color: #4ECDC4;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    color: #666;
+    font-size: 18px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #4ECDC4;
+    font-size: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.continue-btn {
+    display: inline-block;
+    background-color: #B6F36C;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.continue-btn:hover {
+    background-color: #B6F36C;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+/* Formulario */
+* {box-sizing: border-box}
+
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.container {
+  padding: 16px;
+  background-color: #ffff;
+  border: 3px, solid greenyellow;
+  border-radius:10px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+/* Contenedor principal: Centra el formulario */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    /* Fondo atractivo para la vista de escritorio */
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    padding: 1.25rem; /* 20px de padding */
+}
+
+/* La caja del formulario */
+.login-box {
+    background: white;
+    padding: 2.5rem; /* 40px */
+    border-radius: 0.625rem; /* 10px */
+    box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.2); /* Sombra */
+    width: 100%;
+    max-width: 25rem; /* 400px, el ancho máximo */
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 1.5625rem; /* 25px */
+    color: #333;
+    font-size: 1.8rem;
+}
+
+/* División para agrupar Label e Input */
+.input-group {
+    margin-bottom: 1.25rem; /* 20px */
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem; /* 8px */
+    font-weight: bold;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.75rem; /* 12px */
+    border: 1px solid #ccc;
+    border-radius: 0.3125rem; /* 5px */
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #2575fc;
+    outline: none;
+}
+
+/* Estilo del botón */
+.login-button {
+    width: 100%;
+    padding: 0.75rem; /* 12px */
+    border: none;
+    border-radius: 0.3125rem; /* 5px */
+    background-color: #2575fc;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0.625rem; /* 10px */
+}
+
+.login-button:hover {
+    background-color: #0e63e2;
+}
+
+/* -------------------------------------- */
+/* MEDIA QUERY: RESPONSIVE MÓVILES */
+/* -------------------------------------- */
+
+/* Estilos aplicados cuando la pantalla mide 600px o menos */
+@media (max-width: 600px) {
+    
+    /* El contenedor principal simula una vista de aplicación */
+    .login-container {
+        padding: 0; /* Quita el padding exterior */
+        background: #fff; /* Fondo blanco liso */
+        align-items: flex-start; /* Mueve el formulario arriba */
+        min-height: auto; 
+    }
+
+    /* La caja del formulario se expande y pierde los adornos de tarjeta */
+    .login-box {
+        padding: 1.5rem; /* 24px de padding interno */
+        margin-top: 2rem; /* 32px de espacio superior */
+        width: 100%;
+        max-width: 100%;
+        box-shadow: none; /* Elimina la sombra */
+        border-radius: 0; /* Elimina el borde redondeado */
+        border: none;
+    }
+
+    .login-box h2 {
+        font-size: 1.7rem; /* Ajuste sutil del tamaño */
+        text-align: left;
+    }
+    
+    .input-group input {
+        padding: 1rem; /* Aumenta el padding para un mejor toque táctil (16px) */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* BOTÓN HAMBURGUESA (ESCONDE EN DESKTOP) */
+.menu-toggle {
+  display: none; /* Oculto por defecto */
+  font-size: 2rem; /* Tamaño del ícono hamburguesa */
+  background: none; /* Sin fondo */
+  border: none; /* Sin bordes */
+  cursor: pointer; /* Manito al pasar el mouse */
+  margin-right: 1rem; /* Espacio entre el borde derecho */
+}
+
+/* RESPONSIVE: MÓVILES */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Mostrar botón hamburguesa en móviles */
+    color: black;
+  }
+
+  .Menu-Horizontal {
+    display: none; /* Ocultar menú horizontal por defecto */
+    flex-direction: column; /* Mostrarlo en vertical al activarse */
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 5rem; /* Debajo del menú fijo */
+    left: 0;
+  }
+
+  .Menu-Horizontal.active {
+    display: flex; /* Mostrar menú al activar la clase */
+  }
+
+  .Menu-Horizontal li {
+    border-bottom: 1px solid #ccc; /* Líneas separadoras */
+  }
+}

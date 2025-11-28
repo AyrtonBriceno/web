@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TasKids - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href='/'>
+                <img src='logop.png' alt='TasKids logo' />
+            </a>
+            <h1>TasKids</h1>
+        </div>
+        <nav>
+             <!-- BOTÓN HAMBURGUESA -->
+
+   <button class="menu-toggle" aria-label="Abrir menú">
+
+    &#9776;
+
+    <!-- Ícono de hamburguesa -->
+
+   </button>
+            <ul>
+                <li><a href='Profile'>Perfíl</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <section class="welcome">
+            <img src="profile.png" alt="ProfileImg" />
+            <h2>Taskids</h2>
+            <p>¡Hola persona!</p>
+        </section>
+
+        <section class="cards-container">
+            <div class="card">
+                <h3>Tareas del hogar</h3>
+                <p>tarea 1, tarea 2</p>
+                <a href="#" class="continue-btn">Continuar usando</a>
+            </div>
+
+            <div class="card">
+                <h3>Tareas del colegio</h3>
+                <p>tarea 1, tarea 2</p>
+                <a href="#" class="continue-btn">Continuar usando</a>
+            </div>
+
+            <div class="card">
+                <h3>Cosas por comprar</h3>
+                <p>manzanas, naranjas</p>
+                <a href="#" class="continue-btn">Continuar usando</a>
+            </div>
+
+            <div class="card">
+                <h3>Tareas del colegio</h3>
+                <p>fisica, matematicas, historia del peru</p>
+                <a href="#" class="continue-btn">Usar plantilla</a>
+            </div>
+
+            <div class="card">
+                <h3>Mis hobbies</h3>
+                <p>jugar baloncesto, escuchar musica</p>
+                <a href="#" class="continue-btn">Usar plantilla</a>
+            </div>
+
+            <div class="card">
+                <h3>Metas de la semana</h3>
+                <p>aprender matematicas, estudiar</p>
+                <a href="#" class="continue-btn">Usar plantilla</a>
+            </div>
+        </section>
+
+<form>
+  <div class="container">
+    <h1>Formulario de registro</h1>
+    <p>Por favor rellena los siguientes campos para registrar tu cuenta</p>
+    <hr>
+
+    <label for="name"><b>Nombre Completo</b></label>
+    <input type="text" placeholder="Ingresar nombres y apellidos" name="name" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Ingresar Email" name="email" required>
+
+    <label for="country"><b>País</b></label>
+    <input type="text" placeholder="Escriba su país de residencia" name="country" required>
+
+    <label for="psw"><b>Contraseña</b></label>
+    <input type="password" placeholder="Ingresar Contraseña" name="psw" required>
+    
+
+    <label for="psw-repeat"><b>Repetir Contraseña</b></label>
+    <input type="password" placeholder="Repetir Contraseña" name="psw-repeat" required>
+
+    <ul><label><input type="radio" name="Genero" style="margin-bottom:15px"> Masculino</label></ul>
+
+    <ul><label><input type="radio" name="Genero" style="margin-bottom:15px"> Femenino</label></ul>
+
+    <p>Al crear una cuenta, acepta los <a href="#" style="color:dodgerblue">Términos y privacidad</a> de la empresa.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancelar</button>
+      <button type="submit" class="signupbtn">Registrarse</button>
+    </div>
+  </div>
+</form>
+        
+    </main>
+</body>
+</html>
